@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  margin: 1.38rem;
+  height: 80vh;
+}
+
+/** Title of page **/
+.contact h1 {
+  color: #282828;
+
+  font-family: "Hind Guntur", "Hind Vadodara", "Noto Sans", sans-serif;
+  font-size: clamp(3rem, 4vw, 3.5rem);
+  text-align: center;
+
+  margin-bottom: 0;
+}
+
+/** Contact Form **/
+form {
+  padding: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 0 auto;
+}
+
+/** Formspree css reset used: https://gist.github.com/colevscode/ce67075b62f843b7e95b1d5a1370035b **/
+form input,
+form textarea,
+form fieldset,
+form label {
+  display: block;
+
+  font-family: "Gentium Book Basic", "David Libre", "Lustria", serif;
+  font-size: 1rem;
+
+  border: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+form label,
+form legend {
+  margin-bottom: 0.5rem;
+}
+
+/** Form border, padding, margin, width **/
+form input,
+form select,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.9);
+
+  box-sizing: border-box;
+  border: 1px solid #0c00323b;
+
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+}
+
+form input:focus,
+form textarea:focus {
+  background-color: white;
+
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: #3500d4;
+  outline-offset: -1px;
+}
+
+form input:hover,
+form textarea:hover {
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: #3f2478;
+  outline-offset: -1px;
+}
+
+form [type="text"],
+form [type="email"] {
+  width: 100%;
+}
+
+form [type="button"],
+form [type="submit"] {
+  background-color: #3f2478;
+  color: #f4f4f4;
+
+  border: none;
+  border-radius: 50px;
+
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+form [type="button"]:focus,
+form [type="submit"]:focus {
+  outline: none;
+}
+
+form [type="submit"]:hover {
+  background-color: #654a97;
+  outline-style: none;
+}
+
+form textarea {
+  resize: none;
+}
+
+/** Responsiveness **/
+@media (min-width: 40em) {
+  form {
+    padding: 25px;
+    max-width: 50%;
+  }
+} ;

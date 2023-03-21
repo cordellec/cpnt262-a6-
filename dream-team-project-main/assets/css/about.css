@@ -1,0 +1,59 @@
+body {
+  background-color: #1a0061;
+  color: #f4f4f4;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** Title of page **/
+.info-title {
+  font-family: "Hind Guntur", "Hind Vadodara", "Noto Sans", sans-serif;
+  font-size: clamp(3rem, 4vw, 3.5rem);
+  text-align: center;
+
+  padding-top: 1rem;
+  margin-bottom: 0;
+}
+
+/** Description **/
+.info {
+  font-family: "Gentium Book Basic", "David Libre", "Lustria", serif;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+
+  text-align: center;
+  margin: 1.5rem;
+}
+
+/** Container for images **/
+.desktop-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+/** Cards **/
+img {
+  flex: 1;
+  width: auto;
+
+  height: 250px;
+  padding: 0.3rem;
+}
+
+/** Responsiveness **/
+@media (min-width: 40em) {
+  .desktop-cards {
+    padding: 2rem;
+  }
+  img {
+    height: 380px;
+  }
+  .info {
+    margin: 2.5rem;
+    margin-top: 1rem;
+  }
+} ;

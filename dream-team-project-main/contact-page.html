@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Gaming Junkie</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=David+Libre&family=Gentium+Book+Basic&family=Lustria&family=Hind+Guntur:wght@700&family=Hind+Vadodara:wght@700&family=Noto+Sans:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Genos&family=Hubballi&family=Iceberg&family=Iceland&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Logo & Navbar -->
+    <div class="navbar">
+      <span class="logo"><img src="./assets/images/gaming-junkie-logo-navbar.svg" alt="Gaming Junkie logo" /></span>
+      <nav>
+        <ul class="navlist">
+          <a href="./index.html">
+            <li>Games</li>
+          </a>
+          <a href="./about-page.html">
+            <li>About</li>
+          </a>
+          <a href="./contact-page.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contact">
+    <h1>Contact Us</h1>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwkzqwpq"
+      method="post">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Name</label>
+        <input type="text" name="name" id="full-name" placeholder="Your Name" required="">
+        <label for="email-address">Email</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="Your Email" required="">
+        <label for="message">Message</label>
+        <textarea rows="5" name="message" id="message" placeholder="What do you think of our website?"
+          required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <span>&#169 2022 Dream Team </span>
+    </div>
+  </footer>
+</body>
+
+</html>

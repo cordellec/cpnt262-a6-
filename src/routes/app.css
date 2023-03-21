@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "Iceberg";
+  src: url(/assets/images/Iceberg-Regular.ttf);
+}
+
+
+
+/* body parameters */
+#games {
+  background-color: #1a0061;
+  padding-bottom: 3rem;
+}
+
+/* width for the images */
+.imageA {
+  max-width: 100%;
+}
+
+/* wrapper for the whole card */
+.wrapper-large {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* properties for actual card*/
+.card-large {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  max-width: 98%;
+  width: 800px;
+  box-shadow: 5px 5px 5px 5px black;
+  overflow: hidden;
+}
+
+/*info and text for card as well the partial hover effect*/
+.info-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;
+  background: linear-gradient(#19006180, #321930);
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+/*makes graident visible after hover*/
+.card-large:hover .info-large {
+  visibility: visible;
+}
+
+/*overlapping of the info*/
+.info-large:hover {
+  z-index: 1;
+}
+
+/* wrapper for the whole card */
+.wrapper-medium {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* properties for actual card*/
+.card-medium {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 600px;
+  max-width: 98%;
+  box-shadow: 5px 5px 5px 5px black;
+  margin: 20px;
+}
+
+/*info and text for card as well the partial hover effect*/
+.info-medium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;
+  background: linear-gradient(#19006180, #321930);
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+/*makes graident visible after hover*/
+.card-medium:hover .info-medium {
+  visibility: visible;
+}
+
+/*overlapping of the info*/
+.info-medium:hover {
+  z-index: 1;
+}
+
+/* wrapper for the whole card */
+.wrapper-small {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* properties for actual card*/
+.card-small {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 10px;
+  width: 400px;
+  max-width: 98%;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+/*info and text for card as well the partial hover effect*/
+.info-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;
+  background: linear-gradient(#19006180, #321930);
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+/*makes graident visible after hover*/
+.card-small:hover .info-small {
+  visibility: visible;
+}
+
+/*overlapping of the info*/
+.info-small:hover {
+  z-index: 1;
+}
+
+/* font family and color of text for heading */
+h1 {
+  font-family: "iceberg";
+  color: #f4f4f4;
+}
+
+/* font family and color of text for paragraphs */
+p {
+  font-family: "iceberg";
+  color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+header div {
+  display: flex;
+  padding: 1rem;
+}
+
+/* NAVBAR */
+/* big navbar styling, make it sticky, separate logo and actual navmenu */
+.navbar {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 10vh;
+
+  font-family: Genos, sans-serif; /*TODO: add another fallback*/
+
+  background-color: #0c0032;
+}
+
+/*logo styling, probs will need to mess with this again since it's just a placeholder*/
+.logo {
+  padding: 0.5rem;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.logo > img {
+  padding-top: 1rem;
+  width: auto;
+  height: 80px;
+}
+
+/* navlist styling */
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* remove those pesky list bullets */
+.navlist li {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+/* remove that pesky link underline */
+.navlist a,
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* make links wrapping the list items same height as navbar for hover effect, make 'em flexboxes to center list items */
+.navlist a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 10vh;
+  width: 5rem;
+}
+
+/* cool hover stuff with transition */
+header a:hover {
+  background-color: #230090;
+  transition: 0.5s;
+}
+
+/* HERO SECTION */
+/* width constraints, cool shadow */
+.hero-title,
+.hero-phrase {
+  max-width: 40rem;
+
+  text-shadow: 2px 2px 2px #000;
+}
+
+/* big cool hero section */
+.hero {
+  flex-direction: column;
+  align-items: center;
+
+  height: 90vh;
+  /* background image with black gradient overlay, resize and position so it looks better */
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)),
+    url(/assets/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
+  background-size: cover;
+  background-position: center, center;
+}
+
+/* title styling */
+.hero-title {
+  margin-top: 6rem;
+
+  font-family: Iceberg, sans-serif; /*TODO: add another fallback*/
+  font-size: 90px;
+}
+
+/* hero catchphrase styling */
+.hero-phrase {
+  margin-top: 2rem;
+
+  font-family: Iceland, sans-serif; /*TODO: add another fallback*/
+  font-size: 24px;
+}
+
+/* rounded call to action button */
+.cta {
+  margin-top: 4rem;
+  padding: 10px 40px;
+
+  border-radius: 50px;
+
+  font-family: Hubballi; /*TODO: add another fallback*/
+  font-size: 18px;
+
+  background-color: #3f2478;
+}
+
+/*hover effect with smoother transition*/
+.cta:hover {
+  background-color: #fff;
+  color: #0c0032;
+  transition: 0.5s;
+}
+
+/* media query so resizing looks nicer */
+@media (max-width: 650px) {
+  .hero-title {
+    margin-top: 2rem;
+  }
+
+  .hero-phrase {
+    margin-top: 1rem;
+  }
+
+  .cta {
+    margin-top: 2rem;
+  }
+}
+
+/* footer & styling */
+.footer {
+  text-align: center;
+
+  font-family: Genos;
+  font-size: 18px;
+
+  color: #fff;
+  background-color: #0c0032;
+  padding-bottom: 0.8rem;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer li {
+  color: gray;
+}
+
+.footer li:hover {
+  color: #3500d4;
+}
